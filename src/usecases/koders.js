@@ -15,7 +15,7 @@ function create (name, age) {
 
 function deleteById (id) {
   return Koders.findByIdAndDelete(id)
-} 
+}
 
 function updateById (id, name, age) {
   return Koders.findByIdAndUpdate(id, { name, age })
