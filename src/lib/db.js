@@ -1,7 +1,14 @@
 
 const mongoose = require('mongoose')
 
-const url = ''
+const {
+  DB_USER,
+  DB_PASSWORD,
+  DB_HOST,
+  DB_NAME
+} = process.env
+
+const url = `mongodb+srv://${DB_USER}:${DB_PASSWORD}@${DB_HOST}/${DB_NAME}`
 
 const connect = mongoose.connect(
   url, 

@@ -21,7 +21,7 @@ async function login (email, passsword) {
 
   if (!isPasswordValid) throw new Error('Invalid data')
 
-  const token = jwt.sign({ id: userFound._id }, 'kodemia123')
+  const token = jwt.sign({ id: userFound._id }, process.env.JWT_SECRET)
   
   return token
 }

@@ -1,6 +1,6 @@
 
 const express = require('express')
-const express = require('cors')
+const cors = require('cors')
 const kodersRouter = require('./routes/koders')
 const authRouter = require('./routes/auth')
 const server = express()
